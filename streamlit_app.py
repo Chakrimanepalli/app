@@ -1,5 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
+# -*- coding: utf-8 -*-
+"""
+
+@author: chakri-PC
+"""
 
 import streamlit as st
 import pandas as pd
@@ -44,3 +47,8 @@ if st.sidebar.button('Predict'):
     input_data = np.array([[temperature, exhaust_vacuum, amb_pressure, r_humidity]])
     prediction = xgb_model.predict(input_data)[0]
     st.write(f'Predicted Energy Production: {prediction:.2f} MW')
+
+
+if __name__ == '__main__':
+    main()
+    
