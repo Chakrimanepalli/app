@@ -21,7 +21,7 @@ import numpy as np
 
 
 # In[4]:
-
+pip install streamlit 
 
 from sklearn.model_selection import train_test_split
 from xgboost import XGBRegressor
